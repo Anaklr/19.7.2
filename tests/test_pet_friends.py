@@ -128,7 +128,7 @@ def test_add_pet_with_a_lot_of_words_in_variable_name(animal_type='cat', age='2'
     '''Проверка с негативным сценарием. Добавления питомца имя которого превышает 10 слов
     Тест не будет пройден если питомец будет добавлен на сайт с именем состоящим из более 10 слов'''
 
-    name = 'Abgjkjkdfldfkjljdklgdjk;gdfj;gdfj;df;'
+    name = 'Felix Vasya Murka Petya Kotya Felix Goga Arnold Uwi Kolka Boris'
 
     _, api_key = pf.get_app_key(valid_email, valid_password)
     status, result = pf.add_new_pets(api_key, name, animal_type, age, pet_photo)
